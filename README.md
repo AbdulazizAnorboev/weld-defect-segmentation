@@ -33,3 +33,27 @@ The project utilizes the Segformer model, a state-of-the-art transformer-based a
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
+3. Install the required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## Dataset
+
+The dataset consists of weld images and corresponding segmentation masks indicating defect regions. The data is split into training, validation, and test sets. The dataset should be organized as follows:
+
+```
+data/
+├── train/
+│   ├── images/
+│   └── masks/
+├── valid/
+│   ├── images/
+│   └── masks/
+└── test/
+    ├── images/
+    └── masks/
+```
+

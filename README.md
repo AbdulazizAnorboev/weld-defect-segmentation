@@ -97,7 +97,22 @@ python evaluate.py
 The evaluation script will compute metrics such as mean Intersection over Union (mIoU) and pixel accuracy.
 
 ## Results
-The training metrics are saved in training_metrics.csv.
+
+The training metrics are saved in `training_metrics.csv`. Below are some key results:
+
+| Metric                   | Value (Epoch)  |
+|--------------------------|----------------|
+| **Lowest Training Loss** | 0.015597 (100) |
+| **Highest Validation mIoU** | 0.823719 (92) |
+| **Highest Validation Accuracy** | 0.991696 (97) |
+
+### Outstanding Performance
+
+The model demonstrates outstanding performance, particularly in the final epochs. At Epoch 100, the training loss reaches its lowest point at 0.015597, indicating a well-optimized model. The highest validation mean Intersection over Union (mIoU) is achieved at Epoch 92 with a value of 0.823719, showcasing the model's excellent ability to segment weld defects accurately. Additionally, the highest validation accuracy is observed at Epoch 97, reaching 0.991696, further confirming the model's precise and reliable performance in identifying weld defects.
+
+### Training Metrics Plot
+
+![Training Metrics Plot](output_visualizations/training_metrics_plot2.png)
 
 ## Visualization
 The trained model's predictions can be visualized using the visualize.py script. Example visualizations are saved in the output_visualizations directory.
@@ -107,4 +122,6 @@ To visualize predictions, run:
 python visualize.py
 ```
 
+## Acknowledgements
+The project uses the Segformer model from Hugging Face's Transformers library.
 

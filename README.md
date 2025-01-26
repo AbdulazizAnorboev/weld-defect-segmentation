@@ -35,6 +35,8 @@ The project utilizes the Segformer model, a state-of-the-art transformer-based a
 
 ## Setup and Installation
 
+Ensure you have Python 3.8 or later installed and have administrative access to install packages.
+
 1. Clone the repository:
 
    ```bash
@@ -82,19 +84,10 @@ python train.py
 ```
 The training script will:
 
-Load the dataset.
-Initialize the Segformer model.
-Train the model for a specified number of epochs.
-Save the best model checkpoint based on validation mIoU.
-
-## Evaluation
-
-To evaluate the model on the test set, run the following command:
-
-```bash
-python evaluate.py
-```
-The evaluation script will compute metrics such as mean Intersection over Union (mIoU) and pixel accuracy.
+- Load the dataset.
+- Initialize the Segformer model.
+- Train the model for a specified number of epochs.
+- Save the best model checkpoint based on validation mIoU.
 
 ## Results
 
@@ -106,9 +99,7 @@ The training metrics are saved in `training_metrics.csv`. Below are some key res
 | **Highest Validation mIoU** | 0.823719 (92) |
 | **Highest Validation Accuracy** | 0.991696 (97) |
 
-### Outstanding Performance
-
-The model demonstrates outstanding performance, particularly in the final epochs. At Epoch 100, the training loss reaches its lowest point at 0.015597, indicating a well-optimized model. The highest validation mean Intersection over Union (mIoU) is achieved at Epoch 92 with a value of 0.823719, showcasing the model's excellent ability to segment weld defects accurately. Additionally, the highest validation accuracy is observed at Epoch 97, reaching 0.991696, further confirming the model's precise and reliable performance in identifying weld defects.
+The achieved metrics demonstrate the model’s robustness and its practical applicability in industrial settings where precision and reliability are paramount.
 
 ### Training Metrics Plot
 
@@ -121,6 +112,14 @@ To visualize predictions, run:
 ```bash
 python visualize.py
 ```
+## Evaluation
+
+To evaluate the model on the test set, run the following command:
+
+```bash
+python evaluate.py
+```
+The evaluation script will compute metrics such as mean Intersection over Union (mIoU) and pixel accuracy.
 
 ## Acknowledgements
 The project uses the Segformer model from Hugging Face's Transformers library.

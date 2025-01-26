@@ -19,14 +19,17 @@ The project utilizes the Segformer model, a state-of-the-art transformer-based a
 
 ## Setup and Installation
 
-1. **Clone the repository**:
-   ```sh
+1. Clone the repository:
+
+   ```bash
    git clone https://github.com/AbdulazizAnorboev/weld-defect-segmentation.git
    cd weld-defect-segmentation
-
-Create a virtual environment and activate it:
-
+   ```
+   
+2. Create a virtual environment and activate it:
+   
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+   ```
 

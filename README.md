@@ -26,68 +26,7 @@ The project utilizes the Segformer model, a state-of-the-art transformer-based a
 
 Create a virtual environment and activate it:
 
-sh
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install the required packages:
-
-sh
-pip install -r requirements.txt
-Dataset
-The dataset consists of weld images and corresponding segmentation masks indicating defect regions. The data is split into training, validation, and test sets. The dataset should be organized as follows:
-
-Code
-data/
-├── train/
-│   ├── images/
-│   └── masks/
-├── valid/
-│   ├── images/
-│   └── masks/
-└── test/
-    ├── images/
-    └── masks/
-Training
-To train the model, run the following command:
-
-sh
-python train.py
-The training script will:
-
-Load the dataset.
-Initialize the Segformer model.
-Train the model for a specified number of epochs.
-Save the best model checkpoint based on validation mIoU.
-Evaluation
-To evaluate the model on the test set, run the following command:
-
-sh
-python evaluate.py
-The evaluation script will compute metrics such as mean Intersection over Union (mIoU) and pixel accuracy.
-
-Results
-The training metrics are saved in training_metrics.csv. Below are some key results:
-
-1	0.7607	0.3618	0.6776
-...	...	...	...
-100	0.0156	0.8182	0.9914
-Training Metrics Plot
-Visualization
-The trained model's predictions can be visualized using the visualize.py script. Example visualizations are saved in the output_visualizations directory.
-
-To visualize predictions, run:
-
-sh
-python visualize.py
-Example visualizations:
-
-Original Image
-Original Mask
-Predicted Mask
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 
-
-
-
-Acknowledgements
-The project uses the Segformer model from Hugging Face's Transformers library.

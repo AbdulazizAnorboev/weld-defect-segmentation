@@ -95,9 +95,9 @@ The training metrics are saved in `training_metrics.csv`. Below are some key res
 
 | Metric                   | Value (Epoch)  |
 |--------------------------|----------------|
-| **Lowest Training Loss** | 0.015597 (100) |
-| **Highest Validation mIoU** | 0.823719 (92) |
-| **Highest Validation Accuracy** | 0.991696 (97) |
+| **Loss** | 0.015597 (100) |
+| **mIoU** | 0.823719 (92) |
+| **Accuracy** | 0.991696 (97) |
 
 The achieved metrics demonstrate the model’s robustness and its practical applicability in industrial settings where precision and reliability are paramount.
 

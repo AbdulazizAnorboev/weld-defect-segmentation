@@ -19,18 +19,15 @@ The project utilizes the Segformer model, a state-of-the-art transformer-based a
 
 ### Sample Detection Results
 
-  <img src="output_visualizations/visualization_0.png" height="60%" width="60%"
-        style="object-fit:contain"
-    />
-  <img src="output_visualizations/visualization_1.png" height="60%" width="60%"
-       style="object-fit:contain"
-   />
-  <img src="output_visualizations/visualization_2.png" height="60%" width="60%"
-       style="object-fit:contain"
-   />
-  <img src="output_visualizations/visualization_3.png" height="60%" width="60%"
-       style="object-fit:contain"
-   />
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="output_visualizations/visualization_0.png" height="300px" style="margin-right: 10px;" />
+  <img src="output_visualizations/visualization_1.png" height="300px" />
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+  <img src="output_visualizations/visualization_2.png" height="300px" style="margin-right: 10px;" />
+  <img src="output_visualizations/visualization_3.png" height="300px" />
+</div>
+
 
 ## Setup and Installation
 

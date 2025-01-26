@@ -17,6 +17,21 @@ This project aims to detect weld defects using the Segformer model for semantic 
 
 The project utilizes the Segformer model, a state-of-the-art transformer-based architecture for semantic segmentation, to detect and segment defects in weld images. The model is trained and evaluated on a custom dataset of weld images and corresponding defect masks.
 
+### Sample Detection Results
+
+  <img src="output_visualizations/visualization_0.jpg" height="500px" width="100%"
+        style="object-fit:contain"
+    />
+  <img src="output_visualizations/visualization_1.jpg" height="500px" width="100%"
+       style="object-fit:contain"
+   />
+  <img src="output_visualizations/visualization_2.jpg" height="500px" width="100%"
+       style="object-fit:contain"
+   />
+  <img src="output_visualizations/visualization_3.jpg" height="500px" width="100%"
+       style="object-fit:contain"
+   />
+
 ## Setup and Installation
 
 1. Clone the repository:
@@ -56,4 +71,39 @@ data/
     ├── images/
     └── masks/
 ```
+
+## Training
+
+To train the model, run the following command:
+
+```bash
+python train.py
+```
+The training script will:
+
+Load the dataset.
+Initialize the Segformer model.
+Train the model for a specified number of epochs.
+Save the best model checkpoint based on validation mIoU.
+
+## Evaluation
+
+To evaluate the model on the test set, run the following command:
+
+```bash
+python evaluate.py
+```
+The evaluation script will compute metrics such as mean Intersection over Union (mIoU) and pixel accuracy.
+
+## Results
+The training metrics are saved in training_metrics.csv.
+
+## Visualization
+The trained model's predictions can be visualized using the visualize.py script. Example visualizations are saved in the output_visualizations directory.
+To visualize predictions, run:
+
+```bash
+python visualize.py
+```
+
 
